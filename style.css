@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    background: #F3F5FC;
+    
+}
+
+.container>h1{
+    margin: 25px 0;
+    color: #052051;
+    font-size: 3em;
+}
+
+.sub{
+    
+    text-align: center;
+    margin: 25px 0;
+    color: #052051;
+    font-size: 2em;
+
+
+}
+
+.area>textarea{
+
+    font-family: 'Poppins', sans-serif;
+    background: #F3F5FC;    
+    width: 40%;
+    height: 300px;
+    padding: 10px;
+    font-size: 2em;
+    color: #072B61;
+    border: none;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+    
+
+
+
+}
+
+.botones {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .btn1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 4px; /* Ajusta el espacio entre los botones */
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 20px auto 0; /* Ajusta el margen superior para mover los botones más abajo */
+    color: #fff;
+    margin-right: 4px; /* Ajusta el margen derecho para acercar los botones */
+  }
+  .btn1:hover {
+    background:#072B61; 
+ 
+  }
+  
+  .btn2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 4px; /* Ajusta el espacio entre los botones */
+    width: 328px;
+    height: 67px;
+    background: #EFF1FA;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 20px auto 0; /* Ajusta el margen superior para mover los botones más abajo */
+    color: #0A3871;
+    margin-left: 4px; /* Ajusta el margen izquierdo para acercar los botones */
+  }
+    .btn2:hover {
+        background:#E9ECF8; 
+     
+    }
