@@ -47,6 +47,9 @@ body{
 
 }
 
+
+/* Botones */
+
 .botones {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -93,3 +96,87 @@ body{
         background:#E9ECF8; 
      
     }
+
+
+
+
+    /* Resultado */
+
+
+    .icono{
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Para centrar verticalmente */
+      position: fixed; /* Para que el icono se mantenga fijo en la ventana */
+      left: 0; /* Para ubicar el icono en el lado izquierdo */
+      top: 50%; /* Para centrar verticalmente en la mitad de la página */
+      transform: translateY(-50%); /* Para ajustar la posición vertical */
+      color: #052051;
+      font-size: 2em;
+  
+  
+
+
+    }
+ 
+/* Sidebar */
+.sidebar {
+  background-color: #052051;
+  color: #ffffff;
+  width: 200px; /* Ancho de la barra lateral */
+  height: 100vh; /* Altura de la barra lateral (100% del alto del viewport) */
+  padding-top: 20px; /* Espaciado superior del contenido de la barra lateral */
+  transition: transform 0.3s ease-in-out; /* Propiedad a animar y duración de la animación */
+  transform: translateX(-200px); /* Inicia la barra lateral fuera de la pantalla */
+  position: fixed; /* Fijar la posición de la barra lateral */
+  top: 0; /* Posicionar la barra lateral en la parte superior de la pantalla */
+  left: 0; /* Posicionar la barra lateral en el borde izquierdo de la pantalla */
+  border-right: 2px solid #ffffff; /* Agregar un borde derecho de 2px de ancho de color blanco */
+  border-bottom: 2px solid #ffffff; /* Agregar un borde inferior de 2px de ancho de color blanco */
+  z-index: 999; /* Establecer un índice de apilamiento alto para que la barra lateral esté por encima del contenido */
+    transition: transform 0.3s ease-in-out 0.1s;
+   
+}
+
+.sidebar.active {
+  transform: translateX(0); /* Muestra la barra lateral al desplazarla hacia la derecha */
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+
+
+
+
+/* Estilo base del botón */
+.button {
+  background-color: #ffffff;
+  border: 2px solid #052051;
+  border-radius: 8px; /* Se aumenta el valor de border-radius para hacer los bordes más redondeados */
+  width: 80px; /* Se aumenta el ancho del botón a 80px */
+  height: 80px; /* Se aumenta la altura del botón a 80px */
+  outline: none;
+  transition: transform 0.3s ease-in-out; /* Propiedad a animar y duración de la animación */
+  font-size: 18px; /* Se aumenta el tamaño de fuente del texto del botón */
+  display: flex; /* Se utiliza flex para centrar vertical y horizontalmente el contenido del botón */
+  justify-content: center; /* Se centra horizontalmente el contenido del botón */
+  align-items: center; /* Se centra verticalmente el contenido del botón */
+  position: absolute; /* Establece posición absoluta en relación con la barra lateral */
+  top: 20px; /* Ajusta la posición vertical superior del botón */
+  right: -40px; /* Ajusta la posición horizontal derecha del botón para que esté dentro de la barra lateral */
+  z-index: 1;
+}
+
+/* Estilo del botón al hacer clic */
+.button:active {
+  transform: scale(0.95); /* Reducción de escala del botón al hacer clic para un efecto sutil */
+}
+
+
