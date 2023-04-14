@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.classList.toggle('active'); // Cambiar 'sidebar' por 'active'
     });
 });
+  

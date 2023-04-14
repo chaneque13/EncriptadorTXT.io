@@ -100,7 +100,7 @@ body{
 
 
 
-    /* Resultado */
+
 
 
     .icono{
@@ -111,18 +111,31 @@ body{
       left: 0; /* Para ubicar el icono en el lado izquierdo */
       top: 50%; /* Para centrar verticalmente en la mitad de la página */
       transform: translateY(-50%); /* Para ajustar la posición vertical */
-      color: #052051;
+      color: #fff;
       font-size: 2em;
-  
-  
-
-
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+      background-color: #0A3871 ;
+      border-color: #F3F5FC;
+      width: 50px;
+      height: 50px;
     }
+    
+.icono2{
+
+  
+
+
+}
+
+
+
+
  
 /* Sidebar */
 .sidebar {
-  background-color: #052051;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #072B61;
   width: 200px; /* Ancho de la barra lateral */
   height: 100vh; /* Altura de la barra lateral (100% del alto del viewport) */
   padding-top: 20px; /* Espaciado superior del contenido de la barra lateral */
@@ -154,29 +167,5 @@ body{
 
 
 
-
-/* Estilo base del botón */
-.button {
-  background-color: #ffffff;
-  border: 2px solid #052051;
-  border-radius: 8px; /* Se aumenta el valor de border-radius para hacer los bordes más redondeados */
-  width: 80px; /* Se aumenta el ancho del botón a 80px */
-  height: 80px; /* Se aumenta la altura del botón a 80px */
-  outline: none;
-  transition: transform 0.3s ease-in-out; /* Propiedad a animar y duración de la animación */
-  font-size: 18px; /* Se aumenta el tamaño de fuente del texto del botón */
-  display: flex; /* Se utiliza flex para centrar vertical y horizontalmente el contenido del botón */
-  justify-content: center; /* Se centra horizontalmente el contenido del botón */
-  align-items: center; /* Se centra verticalmente el contenido del botón */
-  position: absolute; /* Establece posición absoluta en relación con la barra lateral */
-  top: 20px; /* Ajusta la posición vertical superior del botón */
-  right: -40px; /* Ajusta la posición horizontal derecha del botón para que esté dentro de la barra lateral */
-  z-index: 1;
-}
-
-/* Estilo del botón al hacer clic */
-.button:active {
-  transform: scale(0.95); /* Reducción de escala del botón al hacer clic para un efecto sutil */
-}
 
 
